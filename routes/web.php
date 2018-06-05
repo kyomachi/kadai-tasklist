@@ -11,6 +11,13 @@
 |
 */
 
+/*
 Route::get('/', function () {
     return view('welcome');
 });
+下記へ書き換え
+*/
+
+Route::get('/', 'TasksController@index');
+
+Route::resource('tasks', 'TasksController');
