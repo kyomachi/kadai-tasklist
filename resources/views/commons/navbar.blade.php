@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="http://bd7265db527c4dfdbd0a54cf4eb1711d.vfs.cloud9.us-east-1.amazonaws.com/tasklist/server.php">Tasklist</a>
+                <a class="navbar-brand" href="https://fujita-tasklist.herokuapp.com">Tasklist</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
