@@ -11,13 +11,32 @@
 |
 */
 
-/*
+
 Route::get('/', function () {
     return view('welcome');
 });
-下記へ書き換え
-*/
 
+//ログイン、未ログインでの分岐はTasksController@indexで作る
+Route::get('/', 'TasksController@index');
+
+//ユーザ登録
+
+Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup.get');
+Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
+
+// ログイン認証
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login')->name('login.post');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
+
+// ユーザ登録（ログイン認証付きのルーティング）
+Route::group(['middleware' => ['auth']], function () {
+    Route::resource('users', 'UsersController', ['only' => ['index', 'show']]);
+    Route::resource('tasks', 'TasksController');
+});
+
+/*
 Route::get('/', 'TasksController@index');
 
 Route::resource('tasks', 'TasksController');
+*/

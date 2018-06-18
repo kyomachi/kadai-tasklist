@@ -103,6 +103,24 @@ return [
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
+
+        'email' => [
+            'required' => 'メールアドレスは必ず入力してください',
+        ],
+
+        'password' => [
+            'required' => 'パスワードは必ず入力してください',
+        ],
+
+        'status' => [
+            'required' => 'ステータスは必ず選択してください',
+        ],
+
+        'content' => [
+            'required' => 'タスクの内容は必ず入力してください',
+        ],
+
+
     ],
 
     /*
@@ -119,3 +137,4 @@ return [
     'attributes' => [],
 
 ];
+

@@ -26,7 +26,7 @@ Laravel の名前空間のトップには Illuminate が付いていることだ
         Schema::create('tasks', function (Blueprint $table) {
             $table->increments('id');
             $table->string('content');  // content カラム追加
-                                        // down() は messages テーブルを削除するだけなので、修正は不要。
+                                        // down() は taskss テーブルを削除するだけなので、修正は不要。
             $table->timestamps();
         });
     }
