@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="https://fujita-tasklist.herokuapp.com">Tasklist</a>
+                <a class="navbar-brand" href="https://kyomachi-tasklist.herokuapp.com">Tasklist</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
